@@ -17,6 +17,15 @@ information = {
 	"height": "50",
 	}
 print(information)
-for informationKey,informationValue in information.items():
-	print(informationKey + ":" + informationValue)
-	
+
+# for informationKey,informationValue in information.items():
+# 	print(informationKey + ":" + informationValue)
+# 
+# for informationKey in information.keys():
+# 	print(informationKey)
+
+element = ["name","age"]
+for informationKey in information.keys():
+	print(informationKey.title())
+	if informationKey in element:
+		print("Hello " + informationKey)
